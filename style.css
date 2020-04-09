@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: #222
 }
 
@@ -89,18 +89,22 @@ nav {
 
 
 
-/* ----------------------------- SECTION #ALBUM-LIST  */
+/* ------------------------- SECTION #ALBUM-LIST  */
 
 #album-list {
     padding: 20px 50px;
     color: #fff;
 }
 
+#album-list .row {
+    margin-bottom: 40px;
+}
 
 #album-list h1 {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
+    letter-spacing: 0.4px;
 }
 
 #album-list .all-cards {
@@ -109,12 +113,39 @@ nav {
     overflow: scroll;
 }
 
-#album-list .single-cards {
-
+#album-list .single-card {
+    width: 182px;
+    height: 256px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 20px;
+    position: relative;
 }
 
+.single-cards img {
+    width: 142px;
+    height: 142px;
+}
 
+.single-card h2 {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0;
+}
 
+.single-card p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #b3b3b3;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 
