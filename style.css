@@ -10,7 +10,7 @@ body {
 }
 
 section {
-    height: calc(100% - 90px);
+    height: calc(100vh - 90px);
 }
 
 a {
@@ -69,8 +69,8 @@ li:hover {
     color: #fff;
 }
 
-#sidebar ul {
-    margin-bottom: 30px;
+#sidebar ul.search-home-librery {
+    margin-bottom: 20px;
 }
 
 #sidebar li.active {
@@ -135,13 +135,34 @@ hr {
 }
 
 .last-listened-list ul {
-    height: 405px;
+    height: 360px;
     overflow: hidden;
     overflow-y: scroll;
 }
 
+.install-app {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 30px;
+}
 
+.install-app div {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
+.fa-long-arrow-alt-down {
+    margin: auto;
+}
 
 
 /* ----------------------------------------------------- MAIN */
@@ -282,7 +303,8 @@ nav {
 
 /* -------------------------------------------------- FOOTER */
 
-footer {
+#footer {
+    display: flex;
     width: 100vw;
     height: 90px;
     background-color: #333;
@@ -290,6 +312,88 @@ footer {
     bottom: 0px;
 }
 
+.footer {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.footer-left img {
+    width: 55px;
+    height: 55px;
+}
+
+.footer-left .listeing-song {
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.listeing-song small {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.footer-center {
+    width: calc(100% - 35%);
+    height: 100%;
+    background-color: blue;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    width: 15%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 40%;
+    height: 4px;
+    background: #777;
+    outline: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.fa-desktop {
+    margin: 0px 15px;
+}
+
+#footer .fa-desktop,
+#footer .fa-volume-up,
+#footer .fa-list-ul,
+#footer .slider {
+    opacity: 0.5;
+}
+
+#footer .fa-desktop:hover,
+#footer .fa-volume-up:hover,
+#footer .fa-list-ul:hover,
+#footer .slider:hover {
+    opacity: 1;
+    cursor: pointer;
+}
 
 
 
