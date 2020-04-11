@@ -336,15 +336,61 @@ nav {
     margin-right: 40px;
 }
 
-.listeing-song small {
+small {
     font-size: 12px;
     opacity: 0.5;
 }
 
 .footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: calc(100% - 35%);
     height: 100%;
-    background-color: blue;
+}
+
+.footer-center-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-center-top i.fas {
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.fa-pause-circle {
+    font-size: 36px;
+    margin: 0 30px;
+}
+
+.footer-center-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input.big-slider {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 3px;
+    background: #777;
+    outline: none;
+    border-radius: 10px;
+    margin: 0 30px;
+}
+
+input.big-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
 }
 
 .footer-right {
@@ -356,21 +402,21 @@ nav {
     padding-right: 30px;
 }
 
-.slider {
+input.slider {
     -webkit-appearance: none;
     width: 40%;
-    height: 4px;
+    height: 3px;
     background: #777;
     outline: none;
     border-radius: 10px;
     margin-left: 10px;
 }
 
-.slider::-webkit-slider-thumb {
+input.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
@@ -380,22 +426,33 @@ nav {
     margin: 0px 15px;
 }
 
+
 #footer .fa-desktop,
 #footer .fa-volume-up,
 #footer .fa-list-ul,
-#footer .slider {
+#footer .slider,
+#footer .big-slider,
+#footer .fa-random,
+#footer .fa-step-backward,
+#footer .fa-pause-circle,
+#footer .fa-step-forward,
+#footer .fa-redo-alt {
     opacity: 0.5;
 }
 
 #footer .fa-desktop:hover,
 #footer .fa-volume-up:hover,
 #footer .fa-list-ul:hover,
-#footer .slider:hover {
+#footer .slider:hover,
+#footer .big-slider:hover,
+#footer .fa-random:hover,
+#footer .fa-step-backward:hover,
+#footer .fa-pause-circle:hover,
+#footer .fa-step-forward:hover,
+#footer .fa-redo-alt:hover {
     opacity: 1;
     cursor: pointer;
 }
-
-
 
 
 
