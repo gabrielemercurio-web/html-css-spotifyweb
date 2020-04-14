@@ -181,6 +181,17 @@ main {
 nav {
     display:flex;
     justify-content: center;
+    display: none;
+}
+
+#hamburger {
+    font-size: 26px;
+    color: #fff;
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 #nav-album-list ul {
@@ -436,7 +447,8 @@ input.slider::-webkit-slider-thumb {
 #footer .fa-step-backward,
 #footer .fa-pause-circle,
 #footer .fa-step-forward,
-#footer .fa-redo-alt {
+#footer .fa-redo-alt,
+#hamburger .fa-bars {
     opacity: 0.5;
 }
 
@@ -449,10 +461,27 @@ input.slider::-webkit-slider-thumb {
 #footer .fa-step-backward:hover,
 #footer .fa-pause-circle:hover,
 #footer .fa-step-forward:hover,
-#footer .fa-redo-alt:hover {
+#footer .fa-redo-alt:hover,
+#hamburger .fa-bars:hover {
     opacity: 1;
     cursor: pointer;
 }
+
+
+@media (min-width: 992px) {
+
+    #nav-album-list nav {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #hamburger {
+        visibility: hidden;
+    }
+}
+
 
 
 
